@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Kingfisher (3.1.1)
+  - ObjectMapper (2.0.0)
+  - PullToRefresher (2.0.1)
+  - SwiftyJSON (3.1.0)
+  - Swinject (2.0.0-beta.2)
+  - SwinjectStoryboard (1.0.0-beta.2):
+    - Swinject (= 2.0.0-beta.2)
+  - Then (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Kingfisher (= 3.1.1)
+  - ObjectMapper (= 2.0.0)
+  - PullToRefresher (~> 2.0)
+  - SwiftyJSON (= 3.1.0)
+  - Swinject (~> 2.0.0-beta.2)
+  - SwinjectStoryboard (= 1.0.0-beta.2)
+  - Then (= 2.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: 12b755ae697cc9f0fd3e550db8417fa1233e09ab
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PullToRefresher: 9a529c2506b91f299805e5a5a0c3ef0b44e8ba63
+  SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
+  Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
+  SwinjectStoryboard: b52b45821a50386ef604c3cd098f8029a50a268d
+  Then: 460074ffe907de3536d5e88f189dac5ef7cf0869
+
+PODFILE CHECKSUM: 35ec54bfb143e114b9be4a8646ea24d8ccdbad42
+
+COCOAPODS: 1.1.0.rc.2

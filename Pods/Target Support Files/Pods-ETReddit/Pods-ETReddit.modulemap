@@ -1,0 +1,6 @@
+framework module Pods_ETReddit {
+  umbrella header "Pods-ETReddit-umbrella.h"
+
+  export *
+  module * { export * }
+}
