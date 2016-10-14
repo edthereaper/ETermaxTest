@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6436D2541D6AAA4D00A3D66F /* ExchangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6436D2531D6AAA4D00A3D66F /* ExchangePresenter.swift */; };
+		6436D25A1D6AAE7200A3D66F /* ExchangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6436D2591D6AAE7200A3D66F /* ExchangeInteractor.swift */; };
+		6436D25C1D6AB52800A3D66F /* ExchangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6436D25B1D6AB52800A3D66F /* ExchangeVC.swift */; };
+		643F403F1D7487FC006D7138 /* DInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F403E1D7487FC006D7138 /* DInjection.swift */; };
+		643F40421D74B501006D7138 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F40411D74B501006D7138 /* CountryCell.swift */; };
+		643F40441D74B87D006D7138 /* ModelTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F40431D74B87D006D7138 /* ModelTable.swift */; };
+		643F40471D74BBB4006D7138 /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643F40451D74BBB4006D7138 /* CountryCell.xib */; };
+		646CFE451DAFCC170067FA6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CFE431DAFCC170067FA6D /* AppDelegate.swift */; };
+		646CFE461DAFCC170067FA6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CFE441DAFCC170067FA6D /* ViewController.swift */; };
+		646CFE481DAFCD440067FA6D /* RedditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CFE471DAFCD440067FA6D /* RedditModel.swift */; };
+		649E1D2A1D611A11009F75C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1D281D611A11009F75C8 /* Main.storyboard */; };
+		649E1D2C1D611A11009F75C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649E1D2B1D611A11009F75C8 /* Assets.xcassets */; };
+		649E1D2F1D611A11009F75C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649E1D2D1D611A11009F75C8 /* LaunchScreen.storyboard */; };
+		649E1D411D611EFB009F75C8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D401D611EFB009F75C8 /* Colors.swift */; };
+		649E1D431D611F15009F75C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D421D611F15009F75C8 /* Fonts.swift */; };
+		649E1D461D612AF7009F75C8 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D451D612AF7009F75C8 /* LocalData.swift */; };
+		649E1D491D612CCD009F75C8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D481D612CCD009F75C8 /* Request.swift */; };
+		649E1D4C1D612D4A009F75C8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D4B1D612D4A009F75C8 /* URL.swift */; };
+		649E1D4E1D6132A6009F75C8 /* ExchangeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D4D1D6132A6009F75C8 /* ExchangeDatasource.swift */; };
+		649E1D501D6133BC009F75C8 /* Alias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D4F1D6133BB009F75C8 /* Alias.swift */; };
+		649E1D521D6133E0009F75C8 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649E1D511D6133E0009F75C8 /* Constans.swift */; };
+		64F057761DB1643800CC739C /* KozGoPr6N-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 646CFE3D1DAFC95E0067FA6D /* KozGoPr6N-Bold.otf */; };
+		64F057771DB1643800CC739C /* KozGoPr6N-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 646CFE3F1DAFC95E0067FA6D /* KozGoPr6N-Heavy.otf */; };
+		64F057781DB1643800CC739C /* KozGoPr6N-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 646CFE401DAFC95E0067FA6D /* KozGoPr6N-Light.otf */; };
+		64F057791DB1643800CC739C /* KozGoPr6N-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 646CFE411DAFC95E0067FA6D /* KozGoPr6N-Medium.otf */; };
+		64F0577A1DB1643800CC739C /* KozGoPr6N-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 646CFE421DAFC95E0067FA6D /* KozGoPr6N-Regular.otf */; };
+		64F0577C1DB16B7200CC739C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0577B1DB16B7200CC739C /* Date.swift */; };
+		E5DE43BA0CDFB49F37EBFBD7 /* Pods_ETReddit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE974412F23703DE18D98EF2 /* Pods_ETReddit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6436D2531D6AAA4D00A3D66F /* ExchangePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangePresenter.swift; path = Exchanger/Presenter/ExchangePresenter.swift; sourceTree = "<group>"; };
+		6436D2591D6AAE7200A3D66F /* ExchangeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangeInteractor.swift; path = Exchanger/DataSource/ExchangeInteractor.swift; sourceTree = "<group>"; };
+		6436D25B1D6AB52800A3D66F /* ExchangeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangeVC.swift; path = Exchanger/View/ExchangeVC.swift; sourceTree = "<group>"; };
+		643F403E1D7487FC006D7138 /* DInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DInjection.swift; path = DInjection/DInjection.swift; sourceTree = "<group>"; };
+		643F40411D74B501006D7138 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountryCell.swift; path = Exchanger/Other/CountryCell.swift; sourceTree = "<group>"; };
+		643F40431D74B87D006D7138 /* ModelTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelTable.swift; path = Exchanger/Other/ModelTable.swift; sourceTree = "<group>"; };
+		643F40461D74BBB4006D7138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CountryCell.xib; sourceTree = "<group>"; };
+		646CFE3D1DAFC95E0067FA6D /* KozGoPr6N-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KozGoPr6N-Bold.otf"; path = "Fonts/KozGoPr6N-Bold.otf"; sourceTree = "<group>"; };
+		646CFE3F1DAFC95E0067FA6D /* KozGoPr6N-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KozGoPr6N-Heavy.otf"; path = "Fonts/KozGoPr6N-Heavy.otf"; sourceTree = "<group>"; };
+		646CFE401DAFC95E0067FA6D /* KozGoPr6N-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KozGoPr6N-Light.otf"; path = "Fonts/KozGoPr6N-Light.otf"; sourceTree = "<group>"; };
+		646CFE411DAFC95E0067FA6D /* KozGoPr6N-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KozGoPr6N-Medium.otf"; path = "Fonts/KozGoPr6N-Medium.otf"; sourceTree = "<group>"; };
+		646CFE421DAFC95E0067FA6D /* KozGoPr6N-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KozGoPr6N-Regular.otf"; path = "Fonts/KozGoPr6N-Regular.otf"; sourceTree = "<group>"; };
+		646CFE431DAFCC170067FA6D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Main/AppDelegate.swift; sourceTree = "<group>"; };
+		646CFE441DAFCC170067FA6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Main/ViewController.swift; sourceTree = "<group>"; };
+		646CFE471DAFCD440067FA6D /* RedditModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedditModel.swift; path = Exchanger/Entity/RedditModel.swift; sourceTree = "<group>"; };
+		649E1D211D611A11009F75C8 /* ETReddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETReddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		649E1D291D611A11009F75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		649E1D2B1D611A11009F75C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		649E1D2E1D611A11009F75C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		649E1D301D611A11009F75C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		649E1D401D611EFB009F75C8 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Others/Colors.swift; sourceTree = "<group>"; };
+		649E1D421D611F15009F75C8 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = Others/Fonts.swift; sourceTree = "<group>"; };
+		649E1D451D612AF7009F75C8 /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalData.swift; path = Local/LocalData.swift; sourceTree = "<group>"; };
+		649E1D481D612CCD009F75C8 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Request/Request.swift; sourceTree = "<group>"; };
+		649E1D4B1D612D4A009F75C8 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URL.swift; path = Global/URL.swift; sourceTree = "<group>"; };
+		649E1D4D1D6132A6009F75C8 /* ExchangeDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExchangeDatasource.swift; path = Exchanger/Interactor/ExchangeDatasource.swift; sourceTree = "<group>"; };
+		649E1D4F1D6133BB009F75C8 /* Alias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alias.swift; path = Global/Alias.swift; sourceTree = "<group>"; };
+		649E1D511D6133E0009F75C8 /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constans.swift; path = Global/Constans.swift; sourceTree = "<group>"; };
+		64F0577B1DB16B7200CC739C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Others/Date.swift; sourceTree = "<group>"; };
+		B7A9A0E27E13F4C1B99F8064 /* Pods-ETReddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETReddit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ETReddit/Pods-ETReddit.debug.xcconfig"; sourceTree = "<group>"; };
+		BE974412F23703DE18D98EF2 /* Pods_ETReddit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ETReddit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B0B8A56D73FFE1F42A3C7E /* Pods-ETReddit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ETReddit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ETReddit/Pods-ETReddit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		649E1D1E1D611A11009F75C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DE43BA0CDFB49F37EBFBD7 /* Pods_ETReddit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17EBEAC9CF80A41149762242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7A9A0E27E13F4C1B99F8064 /* Pods-ETReddit.debug.xcconfig */,
+				F5B0B8A56D73FFE1F42A3C7E /* Pods-ETReddit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		643F403D1D7487C1006D7138 /* DInjection */ = {
+			isa = PBXGroup;
+			children = (
+				643F403E1D7487FC006D7138 /* DInjection.swift */,
+			);
+			name = DInjection;
+			sourceTree = "<group>";
+		};
+		643F40401D74B4E0006D7138 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				643F40411D74B501006D7138 /* CountryCell.swift */,
+				643F40431D74B87D006D7138 /* ModelTable.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		643F40481D74F035006D7138 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				646CFE3D1DAFC95E0067FA6D /* KozGoPr6N-Bold.otf */,
+				646CFE3F1DAFC95E0067FA6D /* KozGoPr6N-Heavy.otf */,
+				646CFE401DAFC95E0067FA6D /* KozGoPr6N-Light.otf */,
+				646CFE411DAFC95E0067FA6D /* KozGoPr6N-Medium.otf */,
+				646CFE421DAFC95E0067FA6D /* KozGoPr6N-Regular.otf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		649E1D181D611A11009F75C8 = {
+			isa = PBXGroup;
+			children = (
+				649E1D231D611A11009F75C8 /* CurrencyExchange */,
+				649E1D221D611A11009F75C8 /* Products */,
+				17EBEAC9CF80A41149762242 /* Pods */,
+				EA3951B3F26F7D6DC1F84D7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		649E1D221D611A11009F75C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D211D611A11009F75C8 /* ETReddit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		649E1D231D611A11009F75C8 /* CurrencyExchange */ = {
+			isa = PBXGroup;
+			children = (
+				643F40481D74F035006D7138 /* Font */,
+				643F403D1D7487C1006D7138 /* DInjection */,
+				649E1D4A1D612D15009F75C8 /* Global */,
+				649E1D471D612CAE009F75C8 /* Request */,
+				649E1D441D612AC6009F75C8 /* Local */,
+				649E1D3F1D611EAB009F75C8 /* Others */,
+				649E1D3D1D611DE3009F75C8 /* Storyboard */,
+				649E1D3C1D611DCF009F75C8 /* Main */,
+				649E1D3E1D611E96009F75C8 /* Exchanger */,
+				649E1D2B1D611A11009F75C8 /* Assets.xcassets */,
+				649E1D301D611A11009F75C8 /* Info.plist */,
+			);
+			path = CurrencyExchange;
+			sourceTree = "<group>";
+		};
+		649E1D361D611A22009F75C8 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D3A1D611A41009F75C8 /* View */,
+				649E1D391D611A3A009F75C8 /* DataSource */,
+				649E1D381D611A34009F75C8 /* Presenter */,
+				649E1D371D611A2D009F75C8 /* Interactor */,
+				64F0577D1DB1706300CC739C /* Entity */,
+			);
+			name = Viper;
+			sourceTree = "<group>";
+		};
+		649E1D371D611A2D009F75C8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6436D2591D6AAE7200A3D66F /* ExchangeInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		649E1D381D611A34009F75C8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6436D2531D6AAA4D00A3D66F /* ExchangePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		649E1D391D611A3A009F75C8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D4D1D6132A6009F75C8 /* ExchangeDatasource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		649E1D3A1D611A41009F75C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6436D25B1D6AB52800A3D66F /* ExchangeVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		649E1D3C1D611DCF009F75C8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				646CFE431DAFCC170067FA6D /* AppDelegate.swift */,
+				646CFE441DAFCC170067FA6D /* ViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		649E1D3D1D611DE3009F75C8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D281D611A11009F75C8 /* Main.storyboard */,
+				649E1D2D1D611A11009F75C8 /* LaunchScreen.storyboard */,
+				643F40451D74BBB4006D7138 /* CountryCell.xib */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		649E1D3E1D611E96009F75C8 /* Exchanger */ = {
+			isa = PBXGroup;
+			children = (
+				643F40401D74B4E0006D7138 /* Other */,
+				649E1D361D611A22009F75C8 /* Viper */,
+			);
+			name = Exchanger;
+			sourceTree = "<group>";
+		};
+		649E1D3F1D611EAB009F75C8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D401D611EFB009F75C8 /* Colors.swift */,
+				649E1D421D611F15009F75C8 /* Fonts.swift */,
+				64F0577B1DB16B7200CC739C /* Date.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		649E1D441D612AC6009F75C8 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D451D612AF7009F75C8 /* LocalData.swift */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		649E1D471D612CAE009F75C8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D481D612CCD009F75C8 /* Request.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		649E1D4A1D612D15009F75C8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				649E1D4B1D612D4A009F75C8 /* URL.swift */,
+				649E1D4F1D6133BB009F75C8 /* Alias.swift */,
+				649E1D511D6133E0009F75C8 /* Constans.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		64F0577D1DB1706300CC739C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				646CFE471DAFCD440067FA6D /* RedditModel.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		EA3951B3F26F7D6DC1F84D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE974412F23703DE18D98EF2 /* Pods_ETReddit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		649E1D201D611A11009F75C8 /* ETReddit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 649E1D331D611A11009F75C8 /* Build configuration list for PBXNativeTarget "ETReddit" */;
+			buildPhases = (
+				91520A90A8104B1B4B3F66C5 /* [CP] Check Pods Manifest.lock */,
+				649E1D1D1D611A11009F75C8 /* Sources */,
+				649E1D1E1D611A11009F75C8 /* Frameworks */,
+				649E1D1F1D611A11009F75C8 /* Resources */,
+				E720E7C0436FDCCEE9CAB71E /* [CP] Embed Pods Frameworks */,
+				630081B21AC454AC0A1650E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETReddit;
+			productName = CurrencyExchange;
+			productReference = 649E1D211D611A11009F75C8 /* ETReddit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		649E1D191D611A11009F75C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Eduardo Rodriguez";
+				TargetAttributes = {
+					649E1D201D611A11009F75C8 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 649E1D1C1D611A11009F75C8 /* Build configuration list for PBXProject "ETReddit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 649E1D181D611A11009F75C8;
+			productRefGroup = 649E1D221D611A11009F75C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				649E1D201D611A11009F75C8 /* ETReddit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		649E1D1F1D611A11009F75C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643F40471D74BBB4006D7138 /* CountryCell.xib in Resources */,
+				649E1D2F1D611A11009F75C8 /* LaunchScreen.storyboard in Resources */,
+				64F057761DB1643800CC739C /* KozGoPr6N-Bold.otf in Resources */,
+				64F057771DB1643800CC739C /* KozGoPr6N-Heavy.otf in Resources */,
+				64F057781DB1643800CC739C /* KozGoPr6N-Light.otf in Resources */,
+				64F057791DB1643800CC739C /* KozGoPr6N-Medium.otf in Resources */,
+				64F0577A1DB1643800CC739C /* KozGoPr6N-Regular.otf in Resources */,
+				649E1D2C1D611A11009F75C8 /* Assets.xcassets in Resources */,
+				649E1D2A1D611A11009F75C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		630081B21AC454AC0A1650E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ETReddit/Pods-ETReddit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91520A90A8104B1B4B3F66C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E720E7C0436FDCCEE9CAB71E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ETReddit/Pods-ETReddit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		649E1D1D1D611A11009F75C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649E1D431D611F15009F75C8 /* Fonts.swift in Sources */,
+				6436D2541D6AAA4D00A3D66F /* ExchangePresenter.swift in Sources */,
+				643F40421D74B501006D7138 /* CountryCell.swift in Sources */,
+				646CFE451DAFCC170067FA6D /* AppDelegate.swift in Sources */,
+				649E1D4E1D6132A6009F75C8 /* ExchangeDatasource.swift in Sources */,
+				643F40441D74B87D006D7138 /* ModelTable.swift in Sources */,
+				649E1D521D6133E0009F75C8 /* Constans.swift in Sources */,
+				64F0577C1DB16B7200CC739C /* Date.swift in Sources */,
+				649E1D491D612CCD009F75C8 /* Request.swift in Sources */,
+				649E1D461D612AF7009F75C8 /* LocalData.swift in Sources */,
+				649E1D4C1D612D4A009F75C8 /* URL.swift in Sources */,
+				649E1D411D611EFB009F75C8 /* Colors.swift in Sources */,
+				6436D25A1D6AAE7200A3D66F /* ExchangeInteractor.swift in Sources */,
+				643F403F1D7487FC006D7138 /* DInjection.swift in Sources */,
+				649E1D501D6133BC009F75C8 /* Alias.swift in Sources */,
+				646CFE461DAFCC170067FA6D /* ViewController.swift in Sources */,
+				6436D25C1D6AB52800A3D66F /* ExchangeVC.swift in Sources */,
+				646CFE481DAFCD440067FA6D /* RedditModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		643F40451D74BBB4006D7138 /* CountryCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643F40461D74BBB4006D7138 /* Base */,
+			);
+			name = CountryCell.xib;
+			sourceTree = "<group>";
+		};
+		649E1D281D611A11009F75C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				649E1D291D611A11009F75C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		649E1D2D1D611A11009F75C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				649E1D2E1D611A11009F75C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		649E1D311D611A11009F75C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		649E1D321D611A11009F75C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		649E1D341D611A11009F75C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A9A0E27E13F4C1B99F8064 /* Pods-ETReddit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ettest.etreddit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		649E1D351D611A11009F75C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5B0B8A56D73FFE1F42A3C7E /* Pods-ETReddit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = CurrencyExchange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ettest.etreddit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		649E1D1C1D611A11009F75C8 /* Build configuration list for PBXProject "ETReddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649E1D311D611A11009F75C8 /* Debug */,
+				649E1D321D611A11009F75C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		649E1D331D611A11009F75C8 /* Build configuration list for PBXNativeTarget "ETReddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649E1D341D611A11009F75C8 /* Debug */,
+				649E1D351D611A11009F75C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 649E1D191D611A11009F75C8 /* Project object */;
+}
