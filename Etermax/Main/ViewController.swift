@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CurrencyExchange
+//  Etermax
 //
 //  Created by Eduardo Rodriguez on 8/29/16.
 //  Copyright © 2016 Eduardo Rodriguez. All rights reserved.
