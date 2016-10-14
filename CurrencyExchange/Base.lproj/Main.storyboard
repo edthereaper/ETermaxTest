@@ -108,8 +108,7 @@
                                 <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-8Z-pDD">
-                                <frame key="frameInset" minX="-4" minY="122" width="383" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-8Z-pDD">
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="5A4-WS-fXq"/>
@@ -134,6 +133,7 @@
                             <constraint firstItem="Ns6-Mk-xXF" firstAttribute="top" secondItem="Q70-rZ-vJh" secondAttribute="bottom" constant="32" id="ggB-fm-3eC"/>
                             <constraint firstItem="Q70-rZ-vJh" firstAttribute="top" secondItem="gX4-4t-BZb" secondAttribute="bottom" constant="1" id="goF-5I-ath"/>
                             <constraint firstItem="JS8-PI-JM0" firstAttribute="leading" secondItem="BwG-i7-HIC" secondAttribute="leadingMargin" constant="-20" id="iwf-Lg-ykM"/>
+                            <constraint firstItem="T3b-8Z-pDD" firstAttribute="top" secondItem="JS8-PI-JM0" secondAttribute="bottom" constant="56" id="pav-pk-f2o"/>
                             <constraint firstItem="Q70-rZ-vJh" firstAttribute="leading" secondItem="BwG-i7-HIC" secondAttribute="leadingMargin" constant="-20" id="tHe-l6-6bJ"/>
                             <constraint firstItem="yqN-hN-rEX" firstAttribute="leading" secondItem="BwG-i7-HIC" secondAttribute="leadingMargin" constant="-20" id="xCG-tz-jTE"/>
                             <constraint firstItem="JS8-PI-JM0" firstAttribute="top" secondItem="BwG-i7-HIC" secondAttribute="topMargin" id="z2K-Gy-WUU"/>
@@ -142,7 +142,7 @@
                     <connections>
                         <outlet property="backButton" destination="3wd-a6-CNp" id="Ff9-zw-d8k"/>
                         <outlet property="dateLabel" destination="yqN-hN-rEX" id="Y9p-vy-2rf"/>
-                        <outlet property="navBar" destination="JS8-PI-JM0" id="JKI-FF-7aw"/>
+                        <outlet property="navBar" destination="wab-uZ-pde" id="kEK-18-yAV"/>
                         <outlet property="tableView" destination="gX4-4t-BZb" id="MUM-1P-hiE"/>
                     </connections>
                 </viewController>

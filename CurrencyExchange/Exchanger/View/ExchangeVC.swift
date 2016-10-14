@@ -12,6 +12,7 @@ import PullToRefresh
 
 class ExchangeVC: UIViewController {
     
+    @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var backButton: UIBarButtonItem! {
