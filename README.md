@@ -1,11 +1,14 @@
-# ETermaxTest
+# EtermaxTest
 
-Etermax Test ios
+Etermax Test iOS - 2016
 
 Platform iOS 9/10
 Swift3
 
-Note:
-Please before compile the xcode project, use:
-terminal: pod install 
-to install dependenys
+Instructions:
+
+1) clone repository
+2) open terminal app
+3) cd <path/Etermax>
+4) pod install
+
