@@ -1,4 +1,4 @@
-** EtermaxTest **
+## EtermaxTest ##
 
 Etermax Test iOS - 2016
 
